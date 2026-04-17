@@ -3,140 +3,503 @@
 <head>
     <meta charset="UTF-8">
     <title>Corentin COTTET-EMARD | Portfolio BTS SIO SLAM</title>
-    <meta name="description" content="Portfolio BTS SIO SLAM - Développement web et applicatif">
+    <meta name="description" content="Portfolio BTS SIO SLAM">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="head">
-    <h1>Corentin COTTET-EMARD</h1>
-    <p>BTS SIO – Option SLAM</p>
+<header class="hero" id="accueil">
+    <div class="container hero-layout">
+        <div class="hero-copy">
+            <h1>Corentin COTTET-EMARD</h1>
+            <p class="hero-subtitle">BTS SIO - Option SLAM</p>
+            <p class="hero-text">
+                Étudiant en développement web et applicatif, avec un intérêt
+                marqué pour la structuration du code, l’architecture logicielle
+                et la compréhension des besoins métiers.
+            </p>
+            <div class="hero-actions">
+                <a class="btn" href="#projets">Voir les projets</a>
+                <a class="btn btn-secondary" href="#contact">Me contacter</a>
+            </div>
+        </div>
+
+        <div class="hero-techs" aria-label="Technologies principales">
+            <div class="tech-chip">
+                <img src="assets/icons/java.svg" alt="Java">
+                <span>Java</span>
+            </div>
+            <div class="tech-chip">
+                <img src="assets/icons/javascript.svg" alt="JavaScript">
+                <span>JavaScript</span>
+            </div>
+            <div class="tech-chip">
+                <img src="assets/icons/sql.svg" alt="SQL">
+                <span>SQL</span>
+            </div>
+            <a
+                class="tech-chip tech-chip-link"
+                href="https://github.com/Je-Sappel-Groot"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ouvrir le profil GitHub de Corentin">
+                <img src="assets/icons/git.svg" alt="GitHub">
+                <span>GitHub</span>
+            </a>
+        </div>
+    </div>
 </header>
 
-<nav>
-    <a href="index.html">Accueil</a>
-    <a href="projets.html">Projets</a>
-    <a href="cursus.html">Cursus</a>
-    <a href="contact.html">Contact</a>
+<nav class="site-nav" aria-label="Navigation principale">
+    <div class="container nav-links">
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#competences">Compétences</a>
+        <a href="#projets">Projets</a>
+        <a href="#cursus">Cursus</a>
+        <a href="#veille">Veille</a>
+        <a href="#contact">Contact</a>
+    </div>
 </nav>
 
 <main>
-    <section class="card">
-    <h2>À propos de moi</h2>
+    <section class="section" id="apropos">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-kicker">Présentation</p>
+                <h2>À propos de moi</h2>
+            </div>
 
-    <p>
-        Étudiant en <strong>BTS SIO option SLAM</strong>,
-        je me spécialise dans la conception et le développement
-        d’applications logicielles et web.
-        Je m’intéresse particulièrement à la structuration du code,
-        à l’architecture des applications
-        et à la compréhension des besoins métiers.
-    </p>
+            <div class="panel text-panel">
+                <p>
+                    Étudiant en <strong>BTS SIO option SLAM</strong>,
+                    je me spécialise dans la conception et le développement
+                    d’applications logicielles et web.
+                    Je m’intéresse particulièrement à la structuration du code,
+                    à l’architecture des applications
+                    et à la compréhension des besoins métiers.
+                </p>
 
-    <p>
-        Curieux et rigoureux, j’accorde une importance particulière
-        à la qualité des solutions développées,
-        tant sur le plan technique que fonctionnel.
-        J’aime travailler sur des projets concrets
-        qui apportent une réelle valeur ajoutée à leurs utilisateurs.
-    </p>
+                <p>
+                    Curieux et rigoureux, j’accorde une importance particulière
+                    à la qualité des solutions développées,
+                    tant sur le plan technique que fonctionnel.
+                    J’aime travailler sur des projets concrets
+                    qui apportent une réelle valeur ajoutée à leurs utilisateurs.
+                </p>
 
-    <p>
-        Mon objectif professionnel est d’évoluer vers un poste
-        de <strong>développeur full-stack</strong>,
-        en continuant à approfondir mes compétences
-        et à m’investir dans des projets ambitieux et innovants.
-    </p>
-</section>
-
-
-   <section class="card">
-    <h2>Compétences techniques</h2>
-
-    <div class="skills-grid">
-
-        <div class="skill-card">
-            <img src="assets/icons/java.svg" alt="Java">
-            <h3>Java</h3>
-            <p class="level">Maîtrise intermédiaire</p>
-            <p class="desc">
-                Développement d’applications orientées objet,
-                gestion de la logique métier et accès aux données.
-            </p>
+                <p>
+                    Mon objectif professionnel est d’évoluer vers un poste
+                    de <strong>développeur IOT</strong>,
+                    en continuant à approfondir mes compétences
+                    et à m’investir dans des projets ambitieux et innovants.
+                </p>
+            </div>
         </div>
+    </section>
 
-        <div class="skill-card">
-            <img src="assets/icons/python.svg" alt="Python">
-            <h3>Python</h3>
-            <p class="level">Connaissances intermédiaires</p>
-            <p class="desc">
-                Scripts, automatisation et traitement de données.
-            </p>
+    <section class="section section-alt" id="competences">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-kicker">Technologies</p>
+                <h2>Compétences techniques</h2>
+            </div>
+
+            <div class="skills-grid">
+                <article class="panel skill-card">
+                    <img src="assets/icons/java.svg" alt="Java">
+                    <h3>Java</h3>
+                    <p class="level">Maîtrise intermédiaire</p>
+                    <p class="desc">
+                        Développement d’applications orientées objet,
+                        gestion de la logique métier et accès aux données.
+                    </p>
+                </article>
+
+                <article class="panel skill-card">
+                    <img src="assets/icons/python.svg" alt="Python">
+                    <h3>Python</h3>
+                    <p class="level">Connaissances intermédiaires</p>
+                    <p class="desc">
+                        Scripts, automatisation et traitement de données.
+                    </p>
+                </article>
+
+                <article class="panel skill-card">
+                    <img src="assets/icons/php.svg" alt="PHP">
+                    <h3>PHP</h3>
+                    <p class="level">Connaissances intermédiaires</p>
+                    <p class="desc">
+                        Développement web côté serveur et logique applicative.
+                    </p>
+                </article>
+
+                <article class="panel skill-card">
+                    <img src="assets/icons/javascript.svg" alt="JavaScript">
+                    <h3>JavaScript</h3>
+                    <p class="level">Maîtrise intermédiaire</p>
+                    <p class="desc">
+                        Dynamisation des interfaces et interactions utilisateur.
+                    </p>
+                </article>
+
+                <article class="panel skill-card">
+                    <img src="assets/icons/sql.svg" alt="SQL">
+                    <h3>SQL</h3>
+                    <p class="level">Maîtrise intermédiaire</p>
+                    <p class="desc">
+                        Conception, requêtes et gestion de bases de données relationnelles.
+                    </p>
+                </article>
+
+                <article class="panel skill-card">
+                    <img src="assets/icons/vue.svg" alt="Vue.js">
+                    <h3>Vue.js</h3>
+                    <p class="level">Notions avancées</p>
+                    <p class="desc">
+                        Interfaces modernes, composants et gestion d’état.
+                    </p>
+                </article>
+
+                <article class="panel skill-card">
+                    <img src="assets/icons/spring.svg" alt="Spring Boot">
+                    <h3>Spring Boot</h3>
+                    <p class="level">Notions intermédiaires</p>
+                    <p class="desc">
+                        API REST, architecture backend et sécurité.
+                    </p>
+                </article>
+
+                <article class="panel skill-card">
+                    <img src="assets/icons/git.svg" alt="Git">
+                    <h3>Git</h3>
+                    <p class="level">Maîtrise intermédiaire</p>
+                    <p class="desc">
+                        Versioning, travail collaboratif et gestion de branches.
+                    </p>
+                </article>
+            </div>
         </div>
+    </section>
 
-        <div class="skill-card">
-            <img src="assets/icons/php.svg" alt="PHP">
-            <h3>PHP</h3>
-            <p class="level">Connaissances intermédiaires</p>
-            <p class="desc">
-                Développement web côté serveur et logique applicative.
-            </p>
+    <section class="section" id="projets">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-kicker">Réalisations</p>
+                <h2>Mes projets</h2>
+            </div>
+
+            <div class="projects-grid">
+                <article class="panel project-card">
+                    <div class="project-visual">
+                        <img src="assets/icons/java.svg" alt="Java">
+                        <img src="assets/icons/sql.svg" alt="SQL">
+                        <img src="assets/icons/git.svg" alt="Git">
+                    </div>
+
+                    <div class="project-content">
+                        <h3>Application de gestion</h3>
+
+                        <p class="project-tags">
+                            Java • JavaFX • MySQL
+                        </p>
+
+                        <p>
+                            Application desktop permettant la gestion
+                            de données métiers avec authentification
+                            et base de données relationnelle.
+                        </p>
+
+                        <a href="#fiche-projet" class="btn">
+                            Voir le projet
+                        </a>
+                    </div>
+                </article>
+
+                <article class="panel project-card">
+                    <div class="project-visual">
+                        <img src="assets/icons/spring.svg" alt="Spring Boot">
+                        <img src="assets/icons/java.svg" alt="Java">
+                        <img src="assets/icons/sql.svg" alt="SQL">
+                    </div>
+
+                    <div class="project-content">
+                        <h3>API REST</h3>
+
+                        <p class="project-tags">
+                            Spring Boot • REST • PostgreSQL
+                        </p>
+
+                        <p>
+                            API backend exposant des services REST
+                            avec gestion des données et sécurité.
+                        </p>
+
+                        <a href="#fiche-projet" class="btn">
+                            Voir le projet
+                        </a>
+                    </div>
+                </article>
+            </div>
         </div>
+    </section>
 
-        <div class="skill-card">
-            <img src="assets/icons/javascript.svg" alt="JavaScript">
-            <h3>JavaScript</h3>
-            <p class="level">Maîtrise intermédiaire</p>
-            <p class="desc">
-                Dynamisation des interfaces et interactions utilisateur.
-            </p>
+    <section class="section" id="cursus">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-kicker">Parcours</p>
+                <h2>Mon cursus</h2>
+                <p>Parcours académique et compétences acquises</p>
+            </div>
+
+            <div class="stacked-panels">
+                <article class="panel text-panel">
+                    <h3>IRIS Toulouse Media School</h3>
+
+                    <p>
+                        <strong>IRIS Toulouse Media School</strong> est un établissement
+                        d’enseignement supérieur spécialisé dans les métiers
+                        de l’informatique, du numérique et des technologies de l’information.
+                    </p>
+
+                    <p>
+                        L’école met l’accent sur une pédagogie professionnalisante,
+                        combinant enseignements techniques, projets concrets
+                        et immersion en entreprise grâce à l’alternance.
+                    </p>
+
+                    <p>
+                        Cette approche permet de développer à la fois
+                        des compétences techniques solides
+                        et une compréhension des besoins réels du monde professionnel.
+                    </p>
+                </article>
+
+                <article class="panel text-panel">
+                    <h3>BTS SIO - Option SLAM</h3>
+
+                    <p>
+                        Je suis actuellement étudiant en <strong>BTS Services Informatiques
+                        aux Organisations</strong>, option <strong>SLAM</strong>
+                        (Solutions Logicielles et Applications Métiers).
+                    </p>
+
+                    <p>
+                        Cette formation m’a permis d’acquérir des compétences
+                        en développement d’applications, en conception logicielle,
+                        en gestion de bases de données et en méthodes de travail
+                        utilisées en entreprise.
+                    </p>
+
+                    <p>
+                        Les projets réalisés durant le cursus m’ont permis
+                        de travailler sur des applications complètes,
+                        de la phase d’analyse jusqu’à la mise en production.
+                    </p>
+                </article>
+
+                <article class="panel pdf-panel">
+                    <div class="pdf-copy">
+                        <h3>Tableau de synthèse - BTS SIO</h3>
+
+                        <p>
+                            Vous pouvez consulter ci-dessous mon tableau de synthèse,
+                            récapitulant les compétences acquises
+                            et les projets réalisés durant mon cursus.
+                        </p>
+
+                        <p class="pdf-actions">
+                            <a class="btn" href="assets/documents/tableau-synthese.pdf" target="_blank" rel="noopener noreferrer">
+                                Télécharger le tableau de synthèse (PDF)
+                            </a>
+                        </p>
+                    </div>
+
+                    <object
+                        data="assets/documents/tableau-synthese.pdf"
+                        type="application/pdf"
+                        aria-label="Tableau de synthèse BTS SIO">
+                        <p>
+                            L’aperçu du PDF n’est pas disponible dans ce navigateur.
+                            <a href="assets/documents/tableau-synthese.pdf" target="_blank" rel="noopener noreferrer">
+                                Ouvrir le tableau de synthèse
+                            </a>
+                        </p>
+                    </object>
+                </article>
+            </div>
         </div>
+    </section>
 
-        <div class="skill-card">
-            <img src="assets/icons/sql.svg" alt="SQL">
-            <h3>SQL</h3>
-            <p class="level">Maîtrise intermédiaire</p>
-            <p class="desc">
-                Conception, requêtes et gestion de bases de données relationnelles.
-            </p>
+    <section class="section section-alt" id="veille">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-kicker">Veille</p>
+                <h2>Ma veille informatique</h2>
+                <p>
+                    Veille informationnelle sur l’impact de l’intelligence artificielle
+                    dans l’industrie du cinéma, avec un focus sur les infrastructures
+                    informatiques, les services IT et la cybersécurité.
+                </p>
+            </div>
+
+            <div class="veille-stack">
+                <article class="panel veille-card">
+                    <h3>Sujet et objectif</h3>
+                    <p>
+                        Cette veille porte sur l’impact de l’intelligence artificielle
+                        dans l’industrie du cinéma, avec un focus sur les infrastructures
+                        informatiques, les services IT et la cybersécurité.
+                    </p>
+                    <p>
+                        L’objectif est d’identifier les tendances, les opportunités,
+                        les défis et les menaces liés à l’intégration de l’IA
+                        dans un secteur très dépendant du cloud, du stockage,
+                        du traitement des données et de la protection des contenus.
+                    </p>
+                </article>
+
+                <article class="panel veille-card">
+                    <h3>Problématique</h3>
+                    <p class="problematic">
+                        Comment l’intelligence artificielle transforme-t-elle
+                        la gestion des infrastructures et des services informatiques
+                        dans l’industrie du cinéma ?
+                    </p>
+                    <p>
+                        Cette problématique me semble pertinente dans le cadre
+                        d’un BTS SIO, car elle relie l’informatique de gestion,
+                        le cloud, la sécurité, la donnée et l’évolution des métiers IT
+                        dans un secteur concret.
+                    </p>
+                </article>
+
+                <div class="veille-grid">
+                    <article class="panel veille-card">
+                        <h3>Qui et où ?</h3>
+                        <ul class="veille-list">
+                            <li>Studios, réalisateurs, monteurs et équipes techniques</li>
+                            <li>Entreprises technologiques : Google DeepMind, NVIDIA, Adobe, OpenAI</li>
+                            <li>Professionnels IT : administrateurs systèmes, ingénieurs cloud, experts cybersécurité, développeurs IA</li>
+                            <li>Institutions et régulateurs : CNIL et acteurs encadrant l’usage de l’IA</li>
+                            <li>Industrie mondiale du cinéma, streaming et production en ligne</li>
+                        </ul>
+                    </article>
+
+                    <article class="panel veille-card">
+                        <h3>Quoi ?</h3>
+                        <ul class="veille-list">
+                            <li>Optimisation des infrastructures IT : cloud, data centers, stockage et rendu 3D</li>
+                            <li>Automatisation des processus : montage vidéo, effets spéciaux, restauration</li>
+                            <li>Sécurité des contenus : piratage, deepfakes, protection des œuvres</li>
+                            <li>Impact sur les métiers IT : nouvelles compétences et risques d’automatisation</li>
+                        </ul>
+                    </article>
+
+                    <article class="panel veille-card">
+                        <h3>Quand ?</h3>
+                        <ul class="veille-list">
+                            <li>Évolution récente depuis les années 2010</li>
+                            <li>Accélération des usages liés à l’IA sur la période 2024-2030</li>
+                            <li>Observation des tendances actuelles et futures</li>
+                        </ul>
+                    </article>
+
+                    <article class="panel veille-card">
+                        <h3>Comment et pourquoi ?</h3>
+                        <ul class="veille-list">
+                            <li>Analyse technologique : cloud, machine learning, infrastructures IT</li>
+                            <li>Analyse économique : gains de temps, réduction des coûts, investissements</li>
+                            <li>Analyse sociologique : impact sur les emplois techniques</li>
+                            <li>Analyse éthique et légale : droits d’auteur, manipulation des images, deepfakes</li>
+                            <li>Anticiper les évolutions technologiques du secteur</li>
+                            <li>Comprendre les enjeux de protection des contenus</li>
+                            <li>Identifier les compétences à développer en BTS SIO</li>
+                            <li>Mesurer l’impact de l’automatisation sur les métiers IT</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <article class="panel veille-card">
+                    <h3>Données repérées et points de vigilance</h3>
+                    <ul class="veille-list">
+                        <li>Marché mondial de l’IA dans les médias : prévision de 99,48 milliards de dollars d’ici 2030</li>
+                        <li>60 % des grands studios utiliseraient l’IA pour les effets spéciaux et la gestion des infrastructures cloud</li>
+                        <li>Augmentation de 30 % des cyberattaques ciblant les studios entre 2021 et 2023</li>
+                    </ul>
+                    <p class="veille-note">
+                        Ces chiffres et ces sources doivent encore être vérifiés et consolidés.
+                    </p>
+                </article>
+            </div>
         </div>
+    </section>
 
-        <div class="skill-card">
-            <img src="assets/icons/vue.svg" alt="Vue.js">
-            <h3>Vue.js</h3>
-            <p class="level">Notions avancées</p>
-            <p class="desc">
-                Interfaces modernes, composants et gestion d’état.
-            </p>
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-kicker">Contact</p>
+                <h2>Me contacter ou laisser un message</h2>
+            </div>
+
+            <div class="contact-layout">
+                <section class="panel text-panel">
+                    <h3>Mes coordonnées</h3>
+
+                    <ul class="contact-list">
+                        <li>
+                            <strong>Email :</strong>
+                            <a href="mailto:corentin.ce@me.com">corentin.ce@me.com</a>
+                        </li>
+                        <li>
+                            <strong>LinkedIn :</strong>
+                            <a href="https://www.linkedin.com/in/corentin-cottet-emard-a148132b0/" target="_blank" rel="noopener noreferrer">
+                                linkedin.com/in/corentin-cottet-emard-a148132b0
+                            </a>
+                        </li>
+                        <li>
+                            <strong>GitHub :</strong>
+                            <a href="https://github.com/Je-Sappel-Groot" target="_blank" rel="noopener noreferrer">
+                                github.com/Je-Sappel-Groot
+                            </a>
+                        </li>
+                        <li><strong>Localisation :</strong> Toulouse</li>
+                    </ul>
+                </section>
+
+                <section class="panel form-panel">
+                    <h3>Formulaire de contact</h3>
+
+                    <form id="contact-form">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <button type="submit" class="btn">
+                            Envoyer le message
+                        </button>
+
+                        <p class="form-note" data-form-status></p>
+                    </form>
+                </section>
+            </div>
         </div>
-
-        <div class="skill-card">
-            <img src="assets/icons/spring.svg" alt="Spring Boot">
-            <h3>Spring Boot</h3>
-            <p class="level">Notions intermédiaires</p>
-            <p class="desc">
-                API REST, architecture backend et sécurité.
-            </p>
-        </div>
-
-        <div class="skill-card">
-            <img src="assets/icons/git.svg" alt="Git">
-            <h3>Git</h3>
-            <p class="level">Maîtrise intermédiaire</p>
-            <p class="desc">
-                Versioning, travail collaboratif et gestion de branches.
-            </p>
-        </div>
-
-    </div>
-</section>
-
+    </section>
 </main>
 
-<footer>
-    <p>© 2026 – Corentin COTTET-EMARD</p>
+<footer class="site-footer">
+    <div class="container footer-content">
+        <p>© 2026 – Corentin COTTET-EMARD</p>
+        <a href="#accueil">Retour en haut</a>
+    </div>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
