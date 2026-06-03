@@ -300,6 +300,13 @@ ul {
     font-size: 1.35rem;
 }
 
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 18px;
+}
+
 .project-tags {
     margin-bottom: 14px;
     color: var(--primary);
@@ -467,6 +474,18 @@ ul {
 .btn:focus {
     background: var(--primary-strong);
     transform: translateY(-1px);
+}
+
+.btn-outline {
+    border-color: var(--primary);
+    background: transparent;
+    color: var(--primary-strong);
+}
+
+.btn-outline:hover,
+.btn-outline:focus {
+    background: rgba(30, 122, 99, 0.08);
+    color: var(--primary-strong);
 }
 
 .btn-secondary {
